@@ -1,0 +1,24 @@
+My efforts to make sesame server s startup service, will help someone who will work on this in future.
+
+MAC:
+
+I followed this post. http://superuser.com/questions/229773/run-command-on-startup-login-mac-os-x/229792#229792
+
+We need the plist file that specifies "startup.bash" script as the program to run.
+
+I have created a mac_installer script which creates the plist file for the user specifying startup.bash file 
+from current working directory and copies it to ~/Library/LaunchAgent and laucnhes the plist using the launchctl command.
+
+But whatever reason when I boot up the mac nothing happened. I don't know what am I misssing. 
+Regarless these scripts will help if someone else takes over this work.
+
+
+Ubuntu:
+
+We need a .desktop file which executes "startup.bash" file.
+
+I have created an ubuntu_installer script, which creates the .desktop file for the user specifying startup.bash file 
+from current working directory to be executed and copies it to ~/.config/autostart
+ 
+This is according to ubuntu documentation. But restarting the ubuntu, server didn't start.
+again, Regarless these scripts will help if someone else takes over this work.

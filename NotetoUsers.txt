@@ -1,0 +1,38 @@
+Users:
+
+Windows: Make sure Bluetooth is ON and Just run the run_sesame_server.exe file.
+
+If you'd like to startup the server on boot, follow instructions at http://windows7themes.net/en-us/where-is-the-startup-folder-on-windows-8-1-and-how-to-add-new-items-to-it/
+
+for linux and mac you would need jre 6 or higher.
+
+Linux:
+Make sure Bluetooth is ON and Just Run the startup.bash script.
+If you'd like to start sesame server automatically, include following lines in your ~/.bash_profile or ~/.bashrc
+
+#!/bin/bash
+startup_dir="DIRECTORY NAME WHERE SESAME startup.bash etc. files are located"
+
+if [ -f $startup_dir/startup.bash ]; then
+   cd $startup_dir
+   bash $startup_dir/startup.bash
+   cd -
+fi
+
+
+Mac 
+Make sure Bluetooth is ON and simply double click Run_Sesame_Server.jar to start the sesameserver
+If you get a exception saying the jar crashed, it is probably because bluetooth is OFF.
+
+If you'd like to start sesame server automatically, include following lines in your ~/.bash_profile or ~/.bashrc
+
+#!/bin/bash
+startup_dir="DIRECTORY NAME WHERE SESAME startup.bash etc. files are located"
+
+if [ -f $startup_dir/startup.bash ]; then
+   cd $startup_dir
+   bash $startup_dir/startup.bash
+   cd -
+fi
+
+

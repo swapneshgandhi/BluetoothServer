@@ -1,0 +1,12 @@
+Sesame Server:
+
+for sesame server to work, you would need libraries - bluecove libraries and selenium libraries
+
+for bluecove libraries, we have libraries form version 2.1.1 as well as a bluecove-2.1.2.jar - it is library built for Mac OSX 10.9 It does not have all the functionality/JNI calls but it works for our purposes for now.
+
+for selenium libraries, you should download latest libraries, currently version is 2.43.1. But for each newer Firefox version they update libraries, and you will need latest libraries for Firefox to work.
+
+All the libraries mentioned above, and currently included in libs folder.
+
+
+
